@@ -322,20 +322,27 @@ a:not(hover){
     width: 265px;
     height: 225px;
 }
-.small_images img:nth-child(4n + 1),
-.small_images img:nth-child(4n + 4) {
+
+.small_images img:nth-child(odd) {
     border: 10px solid var(--main2_c);
 }
 
-/* Elements 2, 3, 6, 7, ... */
-.small_images img:nth-child(4n + 2),
-.small_images img:nth-child(4n + 3) {
+.small_images img:nth-child(even) {
     border: 10px solid var(--main_c);
 }
 
 
-
 @media (min-width:720px){
+    .small_images img:nth-child(4n + 1),
+    .small_images img:nth-child(4n + 4) {
+        border: 10px solid var(--main2_c);
+    }
+
+    /* Elements 2, 3, 6, 7, ... */
+    .small_images img:nth-child(4n + 2),
+    .small_images img:nth-child(4n + 3) {
+        border: 10px solid var(--main_c);
+    }
     .logo{
         position: inherit;
     }   
