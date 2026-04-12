@@ -1,0 +1,467 @@
+body{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter, Helvetica, sans-serif;
+    background-color: var(--background_c);
+    font-weight: 100;
+}
+:root{
+    --background_c:#F0E3DB;
+    --vege_c:#92E000;
+    --main_c:#E0340F;
+    --main2_c:#6B1E0C;
+    --menu_c:#000000;
+    
+}
+.flexbox{
+    display: flex;
+}
+
+.container{
+    flex-direction: column;
+}
+header{
+    flex-direction: row;
+    width: 100%;
+    height: 192px;
+    background-color: var(--menu_c);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    position: relative;
+    left: -3.5vh;
+}
+nav{
+    width: 40%;
+    position: relative;
+    left: -3.5vh;
+    justify-content: center;
+}
+.baner{
+    flex-direction: row;
+    width: auto;
+    height: 342px;
+    background-image: url(./img/stol.png);
+    background-position: center;
+    color: white;
+}
+h1{font-weight: 100;}
+h2{font-weight: 100;}
+.shadow{
+    background-color: rgba(02, 02, 02, 0.5);
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.zamowienie_center{
+    margin: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.zamowienie{
+    width: 316px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.main{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Oferta_dnia_kategoria{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.oferta_dnia_inner_kategoria_dnia_inner{
+    width: 98%;
+    height: 63px;
+    background-color: var(--main2_c);
+    border-radius: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Dania{
+    flex-direction: column;
+    align-items: center;
+}
+.Dania_menu{
+    flex-direction: column;
+    align-items: center;
+}
+
+.karta,
+.karta_menu{
+    min-height: 522px;
+    width: 375px;
+    max-width: 90%;
+    background-color: var(--main2_c);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    color: white;
+}
+.img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.karta>.img>img,
+.karta_menu>.img>img{
+    border-radius: 20px;
+    width: 314px;
+    max-width: 90%;
+    height: 185px;
+}
+.text_content{
+    min-height: 146px;
+    padding: 5px 30px 5px 30px;
+    font-size: 30px;
+}
+.cena{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+    flex-direction: row;
+    justify-content: right;
+}
+.przycisk_cena{
+    color: white;
+    width: 168px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Nazwa{
+    padding: 40px;
+    font-size: 25px;
+    white-space: nowrap;
+}
+.oznaczenie{
+    height: 54px;
+    position: relative;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.przycisk_cena>i{padding-right: 6px;}
+.oznaczenie_inner>img{
+    padding: 0px 3px 0px 3px;
+    width: 40px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.menu>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu:hover{
+    border-color: white;
+}
+
+
+
+footer{
+    color: white;
+    width: auto;
+    height: 225px;
+    background-color: var(--menu_c);
+    flex-direction: row;
+    justify-content: space-around;
+}
+.godziny_i_opinie{
+    flex-direction: column;
+}
+.kontakt{
+    flex-direction: column;
+}
+.godziny{
+    flex-direction: column;
+    white-space: nowrap;
+    height: 217px;
+}
+
+.przycisk:hover{
+    background-color: #ff6948;
+    transition: background-color 0.3s ease;
+}
+.przycisk:not(hover){
+    background-color: var(--main_c);
+    transition: background-color 0.3s ease;
+}
+.except_image{
+    flex-direction: column;
+}
+.menu_desktop{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration-color: white;
+    transition: text-decoration-color 0.3s ease;
+}
+a:not(hover){
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease;
+}
+.oznaczenie_legenda{
+    line-height: 24px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--menu_c);
+    width: auto;
+    height: auto;
+    top: 60px;
+    border-radius: 20px;
+}
+.oznaczenie_legenda>span>img{
+    width: 20px;
+    padding-left: 2px;
+}
+.oznaczenie_inner:hover + .oznaczenie_legenda{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+ .image_container{
+    gap: 40px;
+    justify-content: center;
+    width: 1400px;
+    max-width: 90%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+.big_image>img{
+    min-width: 0px;
+    border: 10px solid var(--main_c);
+}
+.mapa>img{
+    min-width: 300px;
+    border: 10px solid var(--main_c);
+}
+.big_image,
+.dane_kontatkowe{
+    justify-content: center;
+    width:48%;
+    min-width: 285px;
+}
+.small_images,
+.mapa{
+    justify-content: center;
+    gap: 40px;
+    width: 48%;
+    min-width: 0px;
+    flex-wrap:wrap;
+}
+.mapa>img{
+    border: 10px solid var(--main2_c);
+}
+
+.dane_kontaktowe{
+    flex-direction: column;
+}
+.kontakt_container{
+    gap: 70px;
+    justify-content: center;
+    width: 1400px;
+    max-width: 90%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+.dane_kontaktowe>h1{
+    font-size: 50px;
+}
+.dane_kontaktowe>span{
+    font-size: 30px;
+    color: var(--main_c);
+}
+
+.small_images>img{
+    width: 265px;
+    height: 225px;
+}
+.small_images img:nth-child(4n + 1),
+.small_images img:nth-child(4n + 4) {
+    border: 10px solid var(--main2_c);
+}
+
+/* Elements 2, 3, 6, 7, ... */
+.small_images img:nth-child(4n + 2),
+.small_images img:nth-child(4n + 3) {
+    border: 10px solid var(--main_c);
+}
+
+
+
+@media (min-width:720px){
+    .logo{
+        position: inherit;
+    }   
+    .shadow{
+        width: 50%;
+        padding-right: 20px;
+    }
+    .zamowienie_center{
+        justify-content: left;
+        position: relative;
+        left: 20px;
+    }
+    .zamowienie{
+        margin-left: 25px;
+        width: 600px;
+        margin-right: 10px;
+    }
+    .Nazwa{
+        margin-left: 27px;
+    }
+    nav{justify-content: right;}
+    .karta,
+    .karta_menu{
+        height: fit-content;
+        min-height: 248px;
+        width: 732px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .karta>.img,
+    .karta_menu>.img{
+        margin-top: 0; padding-left: 20px;
+    }
+    .except_image{
+        flex-direction: column;
+        width: 60%;
+    }
+    .karta>.img>img,
+    .karta_menu>.img>img{
+        border-radius: 20px;
+        width: 314px;
+        max-width: 100%;
+        height: 185px;
+        
+    }
+    .oznaczenie{
+        position: relative;
+        top: 10px;
+    }
+    .text_content{
+        justify-content: left;
+    }
+    .oznaczenie{
+        justify-content: right;
+    }
+    .cena{
+        justify-content: right;
+    }
+
+    .big_image>img{
+        min-width: 595px;
+    }
+    .big_image{
+        min-width: 615px;
+    }
+    .small_images{
+        min-width: 615px;
+    }
+   
+
+
+
+
+    @media (min-width:1200px){
+        .main{
+            align-items: center;
+        }
+        .karta{
+            width: 1100px;
+            min-width: 640px;
+        }
+
+        .karta_menu{
+            width: 640px;
+            
+        }
+
+        .except_image{
+            width: 70%;
+        }
+        .menu{
+            display: none;
+        }
+        .menu_desktop{
+            display: block;
+        }
+        .menu_desktop>ul{
+            list-style: none;
+            width: 900px;
+        }
+        .menu_desktop>ul>li{
+            justify-content: center;
+            align-items: center;
+            height: 92px;
+            font-size: 30px;
+            font-weight: bold;
+            width: 223px;
+            border-right: 4px solid white;
+        }
+        .menu_desktop>ul a:nth-child(4)>li{
+            border: none;
+        }
+
+        .Dania_menu{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            column-gap: 80px;
+            max-width: 98%;
+            width: 1400px;
+            min-width: 1000px;
+            flex-wrap: wrap;
+        }
+
+        
+        
+    }
+}
