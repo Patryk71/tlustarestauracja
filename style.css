@@ -197,7 +197,7 @@ h2{font-weight: 100;}
 }
 .menu_mobile{
     position:absolute;
-    top: 180px;
+    top: 130px;
     right: 0px;
     width: 200px;
     height: 80vh;
@@ -208,6 +208,7 @@ h2{font-weight: 100;}
     display: none;
 }
 .menu_mobile>ul{
+    margin-top: 0px;
     flex-direction: column;
     font-size: 30px;
 }
