@@ -235,6 +235,7 @@ footer{
 }
 .kontakt{
     flex-direction: column;
+    text-decoration: underline;
 }
 .godziny{
     flex-direction: column;
