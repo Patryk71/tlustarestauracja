@@ -331,6 +331,9 @@ a:not(hover){
 .dane_kontaktowe{
     flex-direction: column;
 }
+.dane_kontaktowe>span{
+    text-decortion: underline;
+}
 .kontakt_container{
     gap: 70px;
     justify-content: center;
