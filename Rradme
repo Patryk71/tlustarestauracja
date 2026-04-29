@@ -1,0 +1,24 @@
+```php
+<?php
+if(!isSet($_COOKIE['visited'])){
+  setcookie("visited", "yes");
+  $str = "Cookie o nazwie visited nie jest ustawione.";
+}
+else{
+  $str = "Cookie o nazwie visited jest ustawione.";
+  $str .= "Jego wartość to: {$_COOKIE['visited']}.";
+}
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>Zapis i odczyt cookies</title>
+</head>
+<body>
+<div>
+<?php echo("$str"); ?>
+</div>
+</body>
+</html>
+```
